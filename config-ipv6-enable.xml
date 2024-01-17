@@ -1,0 +1,26 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<interfaces xmlns="http://openconfig.net/yang/interfaces">
+		<interface>
+			<name>{interface_name}</name>
+			<subinterfaces>
+				<subinterface>
+					<index>0</index>
+					<ipv6 xmlns="http://openconfig.net/yang/interfaces/ip">
+					<addresses>
+						<address>
+						<ip>{ipv6_addr}</ip>
+						<config>
+							<ip>{ipv6_addr}</ip>
+							<prefix-length>{ipv6_mask}</prefix-length>
+						</config>
+						</address>
+					</addresses>
+					<config>
+						<enabled>true</enabled>
+					</config>
+					</ipv6>
+				</subinterface>
+			</subinterfaces>
+		</interface>
+	</interfaces>
+</config>

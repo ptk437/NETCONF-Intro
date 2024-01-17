@@ -1,0 +1,13 @@
+<!--don't forget to include the xmlns section, this is not normally added in the yangsuite as it's part of the higher level tag-->
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet1</name>
+    </interface>
+  </interfaces>
+  <interfaces-state xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+    <interface>
+      <name>GigabitEthernet1</name>
+    </interface>
+  </interfaces-state>
+</filter>
